@@ -10,24 +10,24 @@ function calcula_saldo(vit, der){
 let saldo = calcula_saldo(vitorias, derrotas);
 
 function rank(saldo_do_rank){
-    
+    let nivel_rank;
     if (saldo_do_rank <= 10){
-        nivel = "Ferro";
+        nivel_rank = "Ferro";
       }else if (saldo_do_rank <= 20){
-        nivel = "Bronze";
+        nivel_rank = "Bronze";
       }else if (saldo_do_rank <= 50){
-        nivel = "Prata";
+        nivel_rank = "Prata";
       }else if (saldo_do_rank <= 80){
-        nivel = "Ouro";
+        nivel_rank = "Ouro";
       }else if (saldo_do_rank <= 90){
-        nivel = "Diamante";
+        nivel_rank = "Diamante";
       }else if (saldo_do_rank <= 100){
-        nivel = "Lendário";
+        nivel_rank = "Lendário";
       }else{
-        nivel = "Imortal"
+        nivel_rank = "Imortal"
       }
-    return  nivel;
+    return  nivel_rank;
 }
 let nivel = rank(saldo);
 
-console.log("o Herói " + nickname + " está no nível " + nivel +"!")
+console.log("O Herói " + nickname + " está no nível " + nivel +"!")
