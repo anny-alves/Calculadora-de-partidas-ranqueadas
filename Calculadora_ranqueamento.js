@@ -10,6 +10,7 @@ function calcula_saldo(vit, der){
 let saldo = calcula_saldo(vitorias, derrotas);
 
 function rank(saldo_do_rank){
+    
     if (saldo_do_rank <= 10){
         nivel = "Ferro";
       }else if (saldo_do_rank <= 20){
